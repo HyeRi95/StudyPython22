@@ -6,7 +6,7 @@ class Car:
     fuel = '휘발유'
 
     def setPower(self):
-        super.
+        
         print('시동을 겁니다.')
 
     def setPark(self):
