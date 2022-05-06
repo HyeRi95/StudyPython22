@@ -8,8 +8,9 @@ class Vehicle:
         print(f'{self.color}색 {self.name} 생성!')
 
 
-    def desc(self):
+    def desc(self,text:str):
             print(f'{self.name} 객체')
+            print(text)
 
     def move(self):
             print(f'{self.name} 이동!')
@@ -31,10 +32,10 @@ class Car(Vehicle) : # Vehicle 클래스를 상속받는 Car클래스 만든다
     
 if __name__ =='__main__':
     vcl = Vehicle('검은')
-    vcl.desc()
+    vcl.desc('추가내용')
     vcl.move()
 
-    mycar = Car('흰') # 변수가 하나 있어서 흰 넣으면 나오느건가 
-    mycar.desc()
+    mycar = Car('흰') 
+    mycar.desc('자동차 추가내용')
     mycar.move()
     mycar.stop()
